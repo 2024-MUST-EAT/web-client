@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import ImgPlaceholder from "@/assets/images/placeholder2.png";
+import ImgPlaceholder from "@/assets/images/placeholder.png";
 import IconCopy from "@/assets/icons/copy.svg";
 import { Restaurant } from "@/types/Restaurant";
 
