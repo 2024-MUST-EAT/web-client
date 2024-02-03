@@ -32,6 +32,10 @@ const config: Config = {
         skyBlue2: "#368FD0",
         skyBlue1: "#89CEFF",
       },
+      boxShadow: {
+        rgba1: "4px 4px 16px 4px rgba(0,0,0,0.1)",
+        rgba3: "4px 4px 16px 4px rgba(0,0,0,0.3)",
+      },
     },
   },
   plugins: [],

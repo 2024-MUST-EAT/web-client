@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: #27272a;
   background: linear-gradient(
       to bottom,
       transparent,
