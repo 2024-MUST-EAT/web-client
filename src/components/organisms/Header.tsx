@@ -1,9 +1,9 @@
 import Link from "next/link";
-import IconPlus from "@/assets/plus.svg";
+import IconPlus from "@/assets/icons/plus.svg";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center px-4 py-4 bg-white dark:bg-zinc-800 text-xs shadow-md">
+    <section className="flex justify-between items-center px-4 py-4 bg-white dark:bg-zinc-800 text-xs shadow-md">
       <p className="text-xl font-semibold text-green dark:text-neonGreen">
         머스트잇
       </p>
@@ -14,7 +14,7 @@ const Header = () => {
         <IconPlus width={10} height={10} />
         <p className="font-bold">가게 등록</p>
       </Link>
-    </div>
+    </section>
   );
 };
 
