@@ -1,7 +1,7 @@
 import Link from "next/link";
 import IconPlus from "@/assets/icons/plus.svg";
 
-const Header = () => {
+const NewRestaurantHeader = () => {
   return (
     <section className="flex justify-between items-center px-4 py-4 bg-white dark:bg-zinc-800 text-xs shadow-md">
       <Link
@@ -21,4 +21,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NewRestaurantHeader;
