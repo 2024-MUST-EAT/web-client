@@ -9,7 +9,7 @@ const RestaurantLayout = ({ children }: Props) => {
   return (
     <>
       <Header />
-      {children}
+      <div className="px-6 py-4">{children}</div>
     </>
   );
 };
