@@ -17,3 +17,7 @@ body {
     text-wrap: balance;
   }
 }
+
+input:placeholder {
+  color: #d4d4d8;
+}
