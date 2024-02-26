@@ -36,6 +36,12 @@ const config: Config = {
         rgba1: "4px 4px 16px 4px rgba(0,0,0,0.1)",
         rgba3: "4px 4px 16px 4px rgba(0,0,0,0.3)",
       },
+      fontSize: {
+        h1: "32px",
+        h2: "24px",
+        h3: "16px",
+        h4: "14px",
+      },
     },
   },
   plugins: [],

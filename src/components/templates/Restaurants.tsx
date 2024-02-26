@@ -1,7 +1,20 @@
 import React from "react";
+import getRestaurants from "@/api/restaurant/getRestaurants";
 import RestaurantCard from "../organisms/RestaurantCard";
+import EmptyContent from "./EmptyContent";
 
-const Restaurants = () => {
+const Restaurants = async () => {
+  const restaurants = await getRestaurants();
+
+  if (restaurants.results.length === 0)
+    return (
+      <EmptyContent
+        title="가게 등록하기"
+        content={`아직 등록된 맛집이 없어요.
+가장 먼저 나만의 맛집을 등록해보세요!`}
+      />
+    );
+
   return (
     <section className="flex justify-center mx-auto">
       <div className="grid grid-cols-3 px-8 py-6 gap-4 max-sm:grid-cols-1">
@@ -14,17 +27,3 @@ const Restaurants = () => {
 };
 
 export default Restaurants;
-
-const restaurants = {
-  count: 1,
-  results: [
-    {
-      id: 1,
-      name: "맛있는 식당",
-      category: "한식",
-      address: "서울시 강남구 역삼동 123-45",
-      menus: ["된장찌개", "불고기"],
-      image: "https://example-restaurant.com/thumbnail1.jpg",
-    },
-  ],
-};
